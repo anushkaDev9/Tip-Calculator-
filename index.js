@@ -1,14 +1,25 @@
-let tipTotal=0.0
-let total=0.0
-let tipDisplay=document.getElementById('calculate')
-console.log(tipDisplay)
-function cal(){
+alert("hello")
+let amount  //total amount
+ let cal
+function myFunction() { //onload function 
+    cal=document.getElementById('calculate').innerText
+    display=parseInt(cal.substring(1,cal.length))
     
- 
-    let amount=document.getElementById("amount").value
-    tipDisplay+=amount
+
+  }
+function  myFunctions(){
+  amount=parseFloat(document.getElementById('amount').value)
+  display+=amount
+  }
+function addPercentage(n){
+    let p=n/100
+     display*=p
     
-    console.log(amount)
 }
+function cals(){
+    num=parseInt(document.getElementById('num').value)
 
-
+let n = Math.trunc(display/num)
+console.log(n)
+ document.getElementById('calculate').innerText='$'+n
+}

@@ -15,26 +15,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
 <script src="index.js"></script>
     </head>
-    <body>
+    <body onload="myFunction()">
         <img src="images/logo.svg" alt="'logo" class="logo">
         <div class="main-div">
          <div class="div-cal">
-            <form onclick="cal()">
+            <form>
 
             
             <p>Bill</p>
-            <input type="text" class="amount" placeholder="0"  id="amount">
+            <input type="text" class="amount" placeholder="0"  id="amount" onchange="myFunctions()">
             <p>Select Tip %</p>
             <div class="tip-div">
-                <div>5%</div>
-                <div>10%</div>
-                <div>15%</div>
-                <div>20%</div>
-                <div>25%</div>
+                <div onclick="addPercentage(5)">5%</div>
+                <div onclick="addPercentage(10)">10%</div>
+                <div onclick="addPercentage(15)">15%</div>
+                <div onclick="addPercentage(20)">20%</div>
+                <div onclick="addPercentage(25)">25%</div>
                 <div>Custom</div>
             </div>
             <p>Number Of People</p>
-            <input type="text" class="amount" placeholder="0">
+            <input type="text" class="amount" placeholder="0" id="num" onchange="cals()">
         </form>
          </div>
          <div class="div-show">
@@ -44,7 +44,8 @@
         <p style="margin-top: -5%;font-family: 'Roboto Mono', monospace; font-weight:lighter">/ person</p>
        </div>
        <div class="display-amount">
-        <p id='calculate' id="cal">$0.00</p>
+        <p id='calculate' class="cal">$0.00</p>
+        <p></p>
        </div>
        <div>
         <p>Total</p>

@@ -10,7 +10,7 @@ body{
 .main-div{
     background-color: white;
     width: 55%;
-    height: 22rem;
+   
     margin-left: 22%;
     margin-top: 4%;
     border-radius: 20px;
@@ -25,6 +25,7 @@ body{
     margin-bottom: 30px;
     margin-right: 1%;
     padding-left: 3%;
+    height: 22rem;
 }
 .div-show{
     background-color:rgb(7, 73, 79) ;
@@ -103,10 +104,16 @@ p:nth-of-type(3){
   font-family: 'Source Code Pro', monospace;
   
 }
+.cal1{
+    margin-top: -96%;
+  font-size: 40px;
+  color: rgb(104, 194, 177);
+  font-family: 'Source Code Pro', monospace;
+}
 button{
-    width: 165%;
-    margin-top: 30%;
-    height: 2.2rem;
+    width: 175%;
+    margin-top: 20%;
+    height: 2.4rem;
     background-color: rgb(19, 96, 103);
     border:2px solid  rgb(7, 73, 79);
     border-radius: 5px;
