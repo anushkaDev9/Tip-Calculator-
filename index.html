@@ -6,13 +6,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+<script src="index.js"></script>
     </head>
     <body>
         <img src="images/logo.svg" alt="'logo" class="logo">
         <div class="main-div">
          <div class="div-cal">
+            <form onclick="cal()">
+
+            
             <p>Bill</p>
-            <input type="text" class="amount" placeholder="0">
+            <input type="text" class="amount" placeholder="0"  id="amount">
             <p>Select Tip %</p>
             <div class="tip-div">
                 <div>5%</div>
@@ -22,11 +33,28 @@
                 <div>25%</div>
                 <div>Custom</div>
             </div>
-            <p>Bill</p>
+            <p>Number Of People</p>
             <input type="text" class="amount" placeholder="0">
+        </form>
          </div>
          <div class="div-show">
-sdfdfdfdf
+<div class="display">
+       <div>
+        <p>Tip Amount</p>
+        <p style="margin-top: -5%;font-family: 'Roboto Mono', monospace; font-weight:lighter">/ person</p>
+       </div>
+       <div class="display-amount">
+        <p id='calculate' id="cal">$0.00</p>
+       </div>
+       <div>
+        <p>Total</p>
+        <p style="margin-top: -5%;font-family: 'Roboto Mono', monospace; font-weight:lighter">/ person</p>
+       </div>
+       <div class="display-amount">
+        <p class="cal">$0.00</p>
+       </div>
+<button>Reset</button>
+</div>
          </div>
         </div>
     </body>
