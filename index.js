@@ -9,12 +9,14 @@ function myFunction() { //onload function
     cal=document.getElementById('calculate').innerText
     display=parseInt(cal.substring(1,cal.length))
     totalDisplay=document.getElementById('total').innerText
+  
     total=parseInt(totalDisplay.substring(1,totalDisplay.length))
   }
   function addPercentage(n){
     p=n/100
     d=1+p
   console.log(d)
+  
   }
 function cals(){
   amount=parseFloat(document.getElementById('amount').value)
