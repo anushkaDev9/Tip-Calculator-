@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 
             
             <p>Bill</p>
-            <input type="text" class="amount" placeholder="0"  id="amount" onchange="myFunctions()">
+            <input type="text" class="amount" placeholder="0"  id="amount" >
             <p>Select Tip %</p>
             <div class="tip-div">
                 <div onclick="addPercentage(5)">5%</div>
@@ -54,7 +54,7 @@
        <div class="display-amount">
         <p class="cal" id="total">$0.00</p>
        </div>
-<button>Reset</button>
+<button onclick="reset()">Reset</button>
 </div>
          </div>
         </div>
