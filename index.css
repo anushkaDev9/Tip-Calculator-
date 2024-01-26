@@ -46,6 +46,9 @@ body{
     text-align: right;
     font-family: 'Roboto Mono', monospace;
 }
+.amount:hover{
+border:rgb(114, 252, 197) solid 2px  ;
+}
 p{
     font-weight:bold;
     color:rgb(69, 110, 115);
@@ -110,6 +113,7 @@ p:nth-of-type(3){
   color: rgb(104, 194, 177);
   font-family: 'Source Code Pro', monospace;
 }
+
 button{
     width: 175%;
     margin-top: 20%;

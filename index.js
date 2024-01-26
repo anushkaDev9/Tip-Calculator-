@@ -9,7 +9,7 @@ function myFunction() { //onload function
     cal=document.getElementById('calculate').innerText
     display=parseInt(cal.substring(1,cal.length))
     totalDisplay=document.getElementById('total').innerText
-  
+    amountField=document.getElementById('amount')
     total=parseInt(totalDisplay.substring(1,totalDisplay.length))
   }
   function addPercentage(n){
@@ -21,6 +21,9 @@ function myFunction() { //onload function
 function cals(){
   amount=parseFloat(document.getElementById('amount').value)
   num=parseInt(document.getElementById('num').value)
+  if(typeof(amount)===number){
+    amountField.s
+  }
 let n = (amount*p)/num
 n=n.toFixed(2)
 total=((amount*d)/num).toFixed(2)
