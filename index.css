@@ -46,8 +46,14 @@ body{
     text-align: right;
     font-family: 'Roboto Mono', monospace;
 }
-.amount:hover{
-border:rgb(114, 252, 197) solid 2px  ;
+#per{
+    background-color: rgb(104, 194, 177)
+}
+[clicked]{
+    background-color: rgb(104, 194, 177)
+}
+[ammount-checked]{
+    border:rgb(114, 252, 197) solid 2px  ;
 }
 p{
     font-weight:bold;
@@ -64,7 +70,7 @@ p:nth-of-type(2){
  width:90%;
 
 }
-.tip-div div{
+.tip-div span{
     background-color:rgb(7, 73, 79) ;
     height: 2rem;
     width:80%;
