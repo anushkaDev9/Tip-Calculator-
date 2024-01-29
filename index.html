@@ -26,12 +26,12 @@
             <input type="text" class="amount" placeholder="0"  id="amount" >
             <p>Select Tip %</p>
             <div class="tip-div" id="div-tip">
-                <span class="div-per" onclick="addPercentage(5)">5%</span>
-                <span class="div-per" onclick="addPercentage(10)">10%</span>
-                <span class="div-per" onclick="addPercentage(15)">15%</span>
-                <span class="span-per" onclick="addPercentage(20)">20%</span>
-                <span class="span-per" onclick="addPercentage(25)">25%</span>
-                <div>Custom</div>
+                <span class="div-per" data-rating="5">5%</span>
+                <span class="div-per" data-rating="10">10%</span>
+                <span class="div-per" data-rating="15">15%</span>
+                <span class="div-per" data-rating="20">20%</span>
+                <span class="div-per" data-rating="25">25%</span>
+                <input type="text" id="input" onchange="custom()">
             </div>
             <p>Number Of People</p>
             <input type="text" class="amount" placeholder="0" id="num" onchange="cals()">
@@ -54,7 +54,7 @@
        <div class="display-amount">
         <p class="cal" id="total">$0.00</p>
        </div>
-<button onclick="reset()">Reset</button>
+<button id="btn">Reset</button>
 </div>
          </div>
         </div>

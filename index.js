@@ -13,13 +13,31 @@ function myFunction() { //onload function
     totalDisplay=document.getElementById('total').innerText
     amountField=document.getElementById('amount')
     total=parseInt(totalDisplay.substring(1,totalDisplay.length))
-    
+    for(let i of active){
+      i.addEventListener('click' , function(){
+        this.setAttribute('clicked',true)
+        n=parseInt(this.dataset.rating)
+        console.log(n)
+        p=n/100
+      d=1+p
+      })
+      
+    }
+    btn=document.getElementById('btn')
+    btn.addEventListener('click',function(){
+      document.getElementById('calculate').innerText='$0.00'
+      document.getElementById('total').innerText='$0.00'
+      document.getElementById('amount').value=0
+      document.getElementById('num').value=0
+      divAmount.removeAttribute("ammount-checked")
+      document.getElementById('input').value="Custom"
+      for(let i of active){
+        i.removeAttribute('clicked')
+      }
+      
+    })
+
 }
-  function addPercentage(n){
-    p=n/100
-    d=1+p
-    
-  }
 function round(value,digits){
     const factor=Math.pow(10,digits)
     value+=Math.sign(value) *Number.EPSILON;
@@ -40,13 +58,8 @@ console.log(n)
  document.getElementById('calculate').innerText='$'+n
  document.getElementById('total').innerText='$'+total
 }
-if(count>0){
-
-}
-function reset(){
-  document.getElementById('calculate').innerText='$0.00'
- document.getElementById('total').innerText='$0.00'
- document.getElementById('amount').value=0
- document.getElementById('num').value=0
- divAmount.removeAttribute('ammount-checked')
+function custom(){
+  n=parseInt(document.getElementById('input').value)
+  p=n/100
+  d=1+p
 }

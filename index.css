@@ -49,7 +49,7 @@ body{
 #per{
     background-color: rgb(104, 194, 177)
 }
-[clicked]{
+.div-per[clicked]{
     background-color: rgb(104, 194, 177)
 }
 [ammount-checked]{
