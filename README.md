@@ -7,10 +7,9 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Built with
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
+- JavaScript
+- CSS
 ### What I learned
 - **DOM elements**<br/>
 - setAttribute/removeAttribute<br/>
