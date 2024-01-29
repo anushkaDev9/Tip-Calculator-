@@ -5,7 +5,7 @@ Users should be able to:
 - Calculate the correct tip and total cost of the bill per person
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-### Screenshot
+
 ### Built with
 - Semantic HTML5 markup
 - CSS custom properties
@@ -17,3 +17,6 @@ Users should be able to:
 - css properties.
 ## Author
 - Frontend Mentor - [@anushkaDev9]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/anushkaDev9))
+### Preview 
+https://github.com/anushkaDev9/Tip-Calculator-/assets/83566191/df49c791-29f2-4d3e-8e23-d91ee1343b89
+
