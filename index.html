@@ -23,7 +23,9 @@
 
             
             <p>Bill</p>
-            <input type="text" class="amount" placeholder="0"  id="amount" >
+            <input type="text" class="amount" placeholder="0"  id="amount"
+            style=" background-image: url('images/icon-dollar.svg');"
+            >
             <p>Select Tip %</p>
             <div class="tip-div" id="div-tip">
                 <span class="div-per" data-rating="5">5%</span>
@@ -31,10 +33,12 @@
                 <span class="div-per" data-rating="15">15%</span>
                 <span class="div-per" data-rating="20">20%</span>
                 <span class="div-per" data-rating="25">25%</span>
-                <input type="text" id="input" onchange="custom()">
+                <input type="text" id="input" onchange="custom()" placeholder="Custom">
             </div>
-            <p>Number Of People</p>
-            <input type="text" class="amount" placeholder="0" id="num" onchange="cals()">
+            <p>Number Of People <span class="error">can't be zero</span></p>
+            <input type="text" class="amount" placeholder="0" id="num" onchange="cals()"
+            style=" background-image: url('images/icon-person.svg');"
+            >
         </form>
          </div>
          <div class="div-show">

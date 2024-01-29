@@ -6,6 +6,7 @@ let amount  //total amount
  let p
  let d
  let active=document.getElementsByClassName('div-per')
+ let errorText
  var divAmount
 function myFunction() { //onload function 
     cal=document.getElementById('calculate').innerText
@@ -13,6 +14,7 @@ function myFunction() { //onload function
     totalDisplay=document.getElementById('total').innerText
     amountField=document.getElementById('amount')
     total=parseInt(totalDisplay.substring(1,totalDisplay.length))
+   errorText= document.getElementsByClassName('error')
     for(let i of active){
       i.addEventListener('click' , function(){
         this.setAttribute('clicked',true)
@@ -30,13 +32,13 @@ function myFunction() { //onload function
       document.getElementById('amount').value=0
       document.getElementById('num').value=0
       divAmount.removeAttribute("ammount-checked")
-      document.getElementById('input').value="Custom"
+      document.getElementById('input').value
       for(let i of active){
         i.removeAttribute('clicked')
       }
       
     })
-
+   
 }
 function round(value,digits){
     const factor=Math.pow(10,digits)
@@ -50,6 +52,9 @@ function cals(){
     divAmount.setAttribute("ammount-checked",true)
   }
   num=parseInt(document.getElementById('num').value)
+  if(num===0){
+    errorText.style.visiblity="visible"
+  }
 let n = (amount*p)/num
 total=((amount*d)/num).toFixed(2)
 n=n-0.01
