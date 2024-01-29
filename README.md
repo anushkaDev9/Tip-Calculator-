@@ -16,7 +16,7 @@ Users should be able to:
 - setAttribute/removeAttribute<br/>
 - css properties.
 ## Author
-- Frontend Mentor - [@anushkaDev9]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/anushkaDev9))
+- Frontend Mentor - [@anushkaDev9]([https://www.frontendmentor.io/profile/yourusername])
 ### Preview 
 https://github.com/anushkaDev9/Tip-Calculator-/assets/83566191/df49c791-29f2-4d3e-8e23-d91ee1343b89
 
